@@ -7,7 +7,7 @@ var repoSearchTerm = document.querySelector("#repo-search-term");
 var formSubmitHandler = function (event) {
     event.preventDefault();
     //get value from input element
-    var username = nameInputEl.nodeValue.trim();
+    var username = nameInputEl.value.trim();
     if (username) {
         getUserRepos(username);
         nameInputEl.value = "";
